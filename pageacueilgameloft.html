@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gameloft1.png" class="logo">
+    <title>Gameloft</title>
+</head>
+<body>
+    <nav class="navbar"> 
+        <a href="#" class="titre"> GAMELOFT</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Histoire">Histoire</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="Economie">Economie</a></li>
+                <li><a href="#Jeux">Jeux</a></li>
+
+            </ul>
+           
+        
+     
+        </div>
+        <img src="index.png" alt="menu hamburger" class="menuhamburger">
+        
+    </nav>
+    <main>
+        
+        
+        <div class="overlay">
+        <video id="background-video"autoplay loop muted>
+            <source src="Asphalte Demo Video.webm" type="video/mp4">
+        
+        </video>
+
+        </div>
+        <div class="image2"></div>
+        
+        
+
+        <img src="index3.jpeg" alt="image gameloft">
+        <h3>Qu'est ce que Gameloft ?</h3>
+       <p> Fondée en 1999 par Michel Guillemot (frère du fondateur d'Ubisoft Yves Guillemot), Gameloft est une société d'édition et de développement de jeux vidéo. L'idée est de fournir une nouvelle façon de jouer aux jeux vidéo en ciblant des objectifs différents de ceux des consoles de salon, des PC et même des consoles portables. Dès 1999, Michel Guillemot et son frère (également membre de Gameloft) visaient directement le marché de la téléphonie mobile. Le succès fut instantané à l'époque et ne cessera de croître avec le développement des smartphones, l'arrivée des boutiques en ligne pour téléphones portables, l'arrivée des tablettes et des smart TV.</p>
+        <h3 class="mission">Mission de l'entreprise :</h3>
+        <img src="index5.jpeg" alt="mission" class="image2">
+        <p class="donnees"> La mission de Gameloft consiste à crée des jeux pour toutes les plateformes numériques et avec une audience de 147 millions d'utilisateurs mensuels offre via Gameloft Advertising Solutions un niveau unique de visibilité et d'implication aux annonceurs.</p>
+         <footer>
+            <a href="#" class="title">GAMELOFT</a>
+            <div class="nav">
+                <ul>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Histoire">Histoire</a></li>
+                    <li><a href="#Fonctionnement">Fonctionnement</a></li>
+                    <li><a href="Economie">Economie</a></li>
+                    <li><a href="#Jeux">Jeux</a></li>
+    
+                </ul>
+               
+            
+         
+            </div>
+            <div class="image2">
+                <img src="" alt="">
+            </div>
+            
+            
+         </footer>
+    </main>
+    
+   
+    
+
+    
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menuhamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

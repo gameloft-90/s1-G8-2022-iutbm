@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: helvetica;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+header{
+    height: 100vh;
+    width: 10em;
+    background-size: cover;
+
+}
+.navbar{
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing:border-box ;
+    background-color: black;
+    
+}
+.navbar a {
+    color: white;
+}
+.navbar .titre{
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar .nav-links ul {
+    display: flex;
+
+}
+li{
+    padding:0px 40px;
+    
+}
+.navbar .menuhamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+@media screen and (max-width:800px) {
+    .navbar .menuhamburger{
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgb(228, 222, 222);
+        backdrop-filter: blur(7px);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100% ;
+        transition: all 0,5s ease;
+
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar .titre{
+        position: absolute;
+        top : 50px;
+        left: 50px;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+.navbar .menuhamburger{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+.navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+
+}
+.nav-links.mobile-menu{
+    margin-left: 0;
+}
+
+video{
+    position:relative;
+    max-width:100%;
+    margin: 93px 0px 0px 0px;
+    z-index: -100;
+    
+}
+
+
+main img {
+    position: relative;
+    top: -188px;
+    left: 428px;
+    height: 204px;
+    width: 378px;
+    z-index: -120;
+}
+main h3{
+    position: absolute;
+    top: 416px;
+    left: 433px;
+    margin: 674px 0 0 0;
+    color: rgb(32, 32, 32);
+    font-size: 2em;
+    z-index: -99;
+
+    
+}
+main p{
+    position: absolute;
+    top: 601px;
+    margin: 550px -465px 0;
+    left: 474px;
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    font-size: 1.2em;
+    z-index: -2;
+    
+    
+}
+
+.mission{
+    position: relative;
+    top: -350px;
+    z-index: -20;
+
+}
+.donnees{
+    position: absolute;
+    top: 717px;
+    left: 5px;
+    margin: 910px 0 0 0;
+    text-align: center;
+    
+}
+footer{
+    background-color: black; 
+    color: white;
+    font-size: 1em;
+    position: relative;
+    padding: 1px;
+
+
+    
+}
+footer .nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing:border-box ;
+    background-color: black;
+}
+.nav a{
+    color: white;
+
+}
+ .title{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav ul {
+    display: flex;
+
+}
+.nav li{
+    padding:0px 75px;
+}
+.nav ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+
+} video :before{
+    background-color: black;
+}
+body{
+    background: linear-gradient(#a3c2cc,lightgrey);
+}
+.image2{
+    position: relative;
+    top: -633px;
+    left: 428px;
+    height: 204px;
+    width: 378px;
+    z-index: -110;
+    
+
+}
+.overlay {
+    background-color: #00000042;
+    
+}
+
+
+   
+
+
+
+
+
+

@@ -1,19 +1,24 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: helvetica;
+    box-sizing: border-box;
     width: 100%;
-    overflow-x: hidden;
-    
-}
-header{
-    height: 100vh;
-    width: 10em;
+  }
+  html,body{
+    height: 100%;
+  }
+  html {
+    font-family: "Montserrat";
+  }
+  header{
+    width: 1em;
     background-size: cover;
 
 }
+
 .navbar{
     position: fixed;
     padding: 10px;
@@ -23,7 +28,7 @@ header{
     width: 100%;
     box-sizing:border-box ;
     background-color: black;
-    
+    z-index: 2;
 }
 .navbar a {
     color: white;
@@ -40,185 +45,223 @@ li{
     padding:0px 40px;
     
 }
-.navbar .menuhamburger{
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 35px;
-}
-@media screen and (max-width:800px) {
-    .navbar .menuhamburger{
-        display: block;
-    }
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgb(228, 222, 222);
-        backdrop-filter: blur(7px);
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100% ;
-        transition: all 0,5s ease;
-
-    }
-    .navbar{
-        padding: 0;
-    }
-    .navbar .titre{
-        position: absolute;
-        top : 50px;
-        left: 50px;
-    }
-    .nav-links ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-}
-.navbar .menuhamburger{
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 35px;
-}
 .navbar .nav-links ul li {
     margin: 25px 0;
     font-size: 1.2em;
-
-}
-.nav-links.mobile-menu{
-    margin-left: 0;
-}
-
-video{
-    position:relative;
-    max-width:100%;
-    margin: 93px 0px 0px 0px;
-    z-index: -100;
-    
-}
-
-
-main img {
-    position: relative;
-    top: -188px;
-    left: 428px;
-    height: 204px;
-    width: 378px;
-    z-index: -120;
-}
-main h3{
-    position: absolute;
-    top: 416px;
-    left: 433px;
-    margin: 674px 0 0 0;
-    color: rgb(32, 32, 32);
-    font-size: 2em;
-    z-index: -99;
-
-    
-}
-main p{
-    position: absolute;
-    top: 601px;
-    margin: 550px -465px 0;
-    left: 474px;
-    display: flex;
-    align-items: center;
-
-    text-align: center;
-    font-size: 1.2em;
-    z-index: -2;
-    
-    
-}
-
-.mission{
-    position: relative;
-    top: -350px;
-    z-index: -20;
-
-}
-.donnees{
-    position: absolute;
-    top: 717px;
-    left: 5px;
-    margin: 910px 0 0 0;
-    text-align: center;
-    
-}
-footer{
-    background-color: black; 
+    text-decoration: underline;
     color: white;
-    font-size: 1em;
-    position: relative;
-    padding: 1px;
 
-
-    
 }
-footer .nav{
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.nav-links li:hover{
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+  .container {
+    min-height: 100vh;
     width: 100%;
-    box-sizing:border-box ;
-    background-color: black;
-}
-.nav a{
-    color: white;
-
-}
- .title{
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-}
-
-.nav ul {
     display: flex;
-
-}
-.nav li{
-    padding:0px 75px;
-}
-.nav ul li {
-    margin: 25px 0;
-    font-size: 1.2em;
-
-} video :before{
-    background-color: black;
-}
-body{
-    background: linear-gradient(#a3c2cc,lightgrey);
-}
-.image2{
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+    background-color:#0b0b0d;
+    z-index: -100;
+  }
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
     position: relative;
-    top: -633px;
-    left: 428px;
-    height: 204px;
-    width: 378px;
-    z-index: -110;
-    
+  
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  @media only screen and (min-width: 768px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: gray;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .timeline-content .date {
+      position: absolute;
+      top: -30px;
+    }
+    .timeline ul li:hover::before {
+      background-color: aqua;
+    }
+  }
+.basdepage footer{
+  
+  padding: 300px 50px 50px ;
+
+  background: black;
+  flex-grow: 1;
+}
+
+.basdepage h1{
+  color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -300px;
+  font-size: 2em;
+}
+.py a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 0 0 0;
+  position: relative;
+  top: -300px;
+  font-size: 1.2em;
+  text-decoration: underline;
+
 
 }
-.overlay {
-    background-color: #00000042;
-    
+.py a:hover{
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+
 }
+.condition h1{
+  margin: 20px 0 0 0;
+  font-size: 2em;
+}
+.condition a{
+  position: relative;
+  top: -280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 0 0 0;
+  font-size: 1.2em;
+  text-decoration: underline;
 
 
-   
+
+}
+.condition a:hover{
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+.Visiter a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px 0 0 0;
+  position: relative;
+  top: -260px;
+  font-size: 1.2em;
+  text-decoration: underline;
 
 
+}
+.Visiter h1{
+  position: relative;
+  top: -280px;
+  margin: 20px 0 0 0 ;
+  font-size:2em;
 
+}
+.Visiter a:hover{
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+.image {
+  height: 250px;
+  width: 200px;
+  position: relative;
+  top: -200px;
 
+}
+.image .image2{
+  position: relative;
+  top: -300px;
+  left: 1000px;
 
-
+}
+.texte {
+  position: relative;
+  color: white;
+  top: -400px;
+  font-size: 2em;
+  margin: 50px 0 0 0;
+  display: flex;
+  text-align: center;
+}
+  

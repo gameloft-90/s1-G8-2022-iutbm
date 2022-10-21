@@ -19,3 +19,4 @@
 ####### Auteur de la page Jeux Kosak Maxime
 
 
+[RapportEconomique.pdf](https://github.com/gameloft-90/s1-G8-2022-iutbm/files/9836101/RapportEconomique.pdf)

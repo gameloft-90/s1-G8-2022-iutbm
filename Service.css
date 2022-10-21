@@ -6,7 +6,7 @@
     font-family: helvetica;
     width: 100%;
     overflow-x: hidden;
-    
+
 }
 header{
     height: 100vh;
@@ -14,58 +14,142 @@ header{
     background-size: cover;
 
 }
-. barre de navigation{
-    position: fixe;
-    Rembourrage: 10px;
-    affichage: flex;
-    justify-content: espace-entre;
-    align-items: centre;
-    Largeur: 100%;
+.navbar{
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     box-sizing:border-box ;
-    couleur de fond: noir;
-    Indice Z: 2;
+    background-color: black;
+
 }
-. Barre de navigation A {
-    couleur: blanc;
+.navbar a {
+    color: white;
 }
-. barre de navigation . titre{
+.navbar .titre{
     font-size: 2em;
-    font-weight: gras;
+    font-weight: bold;
 }
-. barre de navigation . nav-links ul {
-    affichage: flex;
+.navbar .nav-links ul {
+    display: flex;
 
 }
-Li{
-    Rembourrage:0 px 40px;
-    
+li{
+    padding:0px 40px;
+
 }
-. barre de navigation . nav-links ul li {
-    Marge : 25px 0;
+.navbar .menuhamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+@media screen and (max-width:800px) {
+    .navbar .menuhamburger{
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgb(228, 222, 222);
+        backdrop-filter: blur(7px);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100% ;
+        transition: all 0,5s ease;
+
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar .titre{
+        position: absolute;
+        top : 50px;
+        left: 50px;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+.navbar .menuhamburger{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+.navbar .nav-links ul li {
+    margin: 25px 0;
     font-size: 1.2em;
-    texte-décoration: souligner;
-    couleur: blanc;
 
 }
-
-. nav-links li:hover{
-  transform: scale(1.3);
-  Transition: tous les 0,3s de facilité d’entrée et de sortie;
+.nav-links.mobile-menu{
+    margin-left: 0;
 }
 
 
-    
+footer{
+    background-color: black; 
+    color: white;
+    font-size: 1em;
+    position: relative;
+    padding: 1px;
+
+
+
+}
+footer .nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing:border-box ;
+    background-color: black;
+}
+.nav a{
+    color: white;
+
+}
+ .title{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav ul {
+    display: flex;
+
+}
+.nav li{
+    padding:0px 75px;
+}
+.nav ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+
+
+
 }
 body {
     font: 400 10px/1.4 "Segoe UI", "Helvetica Neue", Roboto, Arial, sans-serif;
     background: linear-gradient(#0f58df42,#a3c2cc,lightgrey);
-    
+
   }
 
   .images {
     display: flex;
   }
-  
+
   .image {
     margin: 0;
     flex: 1;
@@ -74,89 +158,7 @@ body {
     background: #d8d8d8;
     box-shadow: 0 1px 5px rgba(0,0,0,.1)
   }
-  
+
   .image + .image {
     margin-left: 10px;
   }
-. Basdepage Pied de page{
-  
-  Rembourrage: 300 px 50 px 50 px  ;
-
-  arrière-plan: noir;
-  Flex-Grow: 1;
-}
-
-. Basdepage H1{
-  couleur: blanc;
-  font-size: 2em;
-  affichage: flex;
-  justify-content: centre;
-  align-items: centre;
-  position: relative;
-  Top: -300px;
-  font-size: 2em;
-}
-. py a{
-  affichage: flex;
-  justify-content: centre;
-  align-items: centre;
-  couleur: blanc;
-  Marge : 20px  0 0 0 ;
-  position: relative;
-  Top: -300px;
-  font-size: 1.2em;
-  texte-décoration: souligner;
-
-
-}
-. Py A:Hover{
-  transform: scale(1.3);
-  Transition: tous les 0,3s de facilité d’entrée et de sortie;
-
-}
-. Condition H1{
-  Marge : 20px  0 0 0 ;
-  font-size: 2em;
-}
-. Condition A{
-  position: relative;
-  Top: -280px;
-  affichage: flex;
-  justify-content: centre;
-  align-items: centre;
-  couleur: blanc;
-  Marge : 20px  0 0 0 ;
-  font-size: 1.2em;
-  texte-décoration: souligner;
-
-
-
-}
-. Condition A:Hover{
-  transform: scale(1.3);
-  Transition: tous les 0,3s de facilité d’entrée et de sortie;
-}
-. Visiter a {
-  affichage: flex;
-  justify-content: centre;
-  align-items: centre;
-  couleur: blanc;
-  Marge : 20px  0 0 0 ;
-  position: relative;
-  Top: -260px;
-  font-size: 1.2em;
-  texte-décoration: souligner;
-
-
-}
-. Visiter h1{
-  position: relative;
-  Top: -280px;
-  Marge : 20px  0 0 0  ;
-  font-size:2em;
-
-}
-. Visiter a:hover{
-  transform: scale(1.3);
-  Transition: tous les 0,3s de facilité d’entrée et de sortie;
-}
